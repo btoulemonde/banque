@@ -8,7 +8,6 @@ public class Compte {
 	public Compte(String numeroCompte, double soldeCompte) {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
-
 	}
 	//retourne numero et solde compte
 	public String toString () {
