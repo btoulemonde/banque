@@ -1,27 +1,35 @@
 package fr.diginamic.banque.entities;
 
 public class Compte {
-	
-	private long numeroCompte;
+
+	private String numeroCompte;
 	private double soldeCompte;
-	
-	public Compte (long numeroCompte, double soldeCompte){
+
+	public Compte(String numeroCompte, double soldeCompte) {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
+
 	}
-	public long getNumeroCompte() {
+	//retourne numero et solde compte
+	public String toString () {
+		return "numéro de compte : " + numeroCompte + "\n" + "solde compte: " + soldeCompte + " €";
+	}
+ 
+	// getters et setters
+	public String getNumeroCompte() {
 		return numeroCompte;
 	}
-	public void setNumeroCompte(long numeroCompte) {
+
+	public void setNumeroCompte(String numeroCompte) {
 		this.numeroCompte = numeroCompte;
 	}
+
 	public double getSoldeCompte() {
 		return soldeCompte;
 	}
+
 	public void setSoldeCompte(double soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
-	
-	
 
 }
