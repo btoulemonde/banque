@@ -12,7 +12,7 @@ public class Compte {
 	}
 	//retourne numero et solde compte
 	public String toString () {
-		return "numéro de compte : " + numeroCompte + "\n" + "solde compte: " + soldeCompte + " €";
+		return numeroCompte + " " + soldeCompte + " €";
 	}
  
 	// getters et setters

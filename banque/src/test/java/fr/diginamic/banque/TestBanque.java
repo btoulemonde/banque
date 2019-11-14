@@ -1,21 +1,23 @@
 package fr.diginamic.banque;
 
 import fr.diginamic.banque.entities.Compte;
+import fr.diginamic.banque.entities.CompteTaux;
 
 public class TestBanque {
 
 	public static void main(String[] args) {
-		Compte client1 = new Compte ("123456789", 1458.25);
+		Compte client1 = new Compte("123456789", 1458.25);
+
+		Compte[] comptes = new Compte[2];
+
+		comptes[0]=new Compte("12A",150.0);
+		comptes[1]=new CompteTaux("12A",250.0,1.5);
 		
-		//setter pour modifier numero compte
-		client1.setNumeroCompte("1245678910ABC");
-		
-		//getter pour modifier solde compte
-		client1.setSoldeCompte(2458.25);
-		
-		System.out.println(client1);
-		
+		for (int i = 0;i<comptes.length; i++){
+			System.out.println(comptes[i]);
+		}
 	}
 
-}
+	
 
+}
